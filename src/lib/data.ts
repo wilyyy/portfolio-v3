@@ -3,7 +3,7 @@ export interface PageData {
   slug: string;
   title?: string;
   description?: string;
-  content?: string;
+  content?: string; // info only
 }
 
 export const data: PageData[] = [
