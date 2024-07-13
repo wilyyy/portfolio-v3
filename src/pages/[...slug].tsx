@@ -4,6 +4,8 @@ import type {
    GetStaticPaths,
  } from 'next'
 
+ import { GetPageData } from '@/lib/utils';
+
 export default function Page() {
    return <></>;
 }
