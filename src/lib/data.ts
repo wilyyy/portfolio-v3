@@ -7,18 +7,12 @@ export interface PageData {
 }
 
 export const data: PageData[] = [
-   {
-      type: 'projects',
-      slug: 'project-1',
-      title: 'Project 1',
-      description: 'Description for project 1',
-   },
-   {
-      type: 'projects',
-      slug: 'project-2',
-      title: 'Project 2',
-      description: 'Description for project 2',
-   },
    { type: 'info', slug: 'about-us', content: 'About us content' },
-   { type: 'info', slug: 'contact', content: 'Contact content' },
+   {
+      type: 'projects',
+      slug: 'project-landing',
+      title: 'Project 1',
+      content: 'landing page for projects',
+   },
+   { type: 'play', slug: 'contact', content: 'Contact content' },
 ];
