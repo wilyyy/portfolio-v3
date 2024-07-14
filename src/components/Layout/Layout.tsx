@@ -2,7 +2,11 @@ import Head from "next/head";
 
 import Navigation from "../Navigation/Navigation";
 
-export default function Layout() {
+interface Props {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: Props) {
   return (
     <>
       <Head>
@@ -11,7 +15,7 @@ export default function Layout() {
       <div>
         <Navigation />
         <main>
-          asdasd
+          {children}
         </main>
       </div>
     </>

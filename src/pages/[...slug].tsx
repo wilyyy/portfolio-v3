@@ -8,12 +8,13 @@ import type {
 import Layout from '@/components/Layout/Layout';
 
 /** Page logic
- * - Get the page data
- * - Render the page
+ * todo: fetch data from lib/data.ts using getStaticProps
+ * todo: setup layout component props and pass to layout
+ * todo: return component factory in layout
  */
 
 export default function Page() {
-   return <Layout></Layout>;
+   return <Layout>asdsa</Layout>;
 }
 
 export const getStaticPaths = (async () => {
