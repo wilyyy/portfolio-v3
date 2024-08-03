@@ -31,6 +31,8 @@ export const getStaticProps = async ({ params }: any) => {
       return { notFound: true };
    }
 
+   console.log("page data: ", pageData);
+
    return {
       props: {
          type: pageData.type,
@@ -44,7 +46,7 @@ export const getStaticPaths = (async () => {
       params: { slug: [item.type, item.slug] },
    }));
 
-   console.log(paths);
+   console.log("page path: ", paths);
 
    return { 
       paths, 
